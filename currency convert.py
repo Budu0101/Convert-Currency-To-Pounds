@@ -1,4 +1,4 @@
-
+#declaring values dict
 currencies = {
   "USD": 0.73,
   "EUR": 0.85,
@@ -9,7 +9,11 @@ currencies = {
   "AUD": 0.54
 }
 
-
+#inputting type and amount
 type_currency = input("What currency do you want to convert to pounds? (USD/EUR/JPY):  ")
 amount = int(input("Enter the amount: "))
-print(f"Amount in pounds: {int(amount) * currencies[type_currency]}")
+#declaring the convert function
+def convert():
+   return int(amount) * currencies[type_currency]
+
+print(f"Amount in pounds: {convert()}")
